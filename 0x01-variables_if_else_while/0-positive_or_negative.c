@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- *main - entry piont
- *description: fales or true validation
+ * main - entry piont
+ * description: fales or true validation
  * return: 0 (success)
  */
 
