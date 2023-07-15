@@ -5,8 +5,8 @@
 /**
  *main - entry piont
  *description: fales or true validation
- *return: 0 (success)
-*/
+ * return: 0 (success)
+ */
 
 int main(void)
 {
