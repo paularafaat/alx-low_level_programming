@@ -4,6 +4,6 @@
 #include <stdio.h>
 int _putchar(char C);
 int _isupper(int C);
-
+int _isdigit(int c);
 
 #endif
