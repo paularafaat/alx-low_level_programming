@@ -23,7 +23,7 @@ int _sqrt_recursion(int n)
  *
  * Return: the resulting square root
  */
-int actual_sqrt_recursion(int n, int y
+int actual_sqrt_recursion(int n, int y)
 {
 	if (y * y > n)
 		return (-1);
