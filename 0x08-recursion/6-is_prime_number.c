@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int is_prime_number - checkout if n is a priime number
+ * is_prime_number - checkout if n is a priime number
  * @n: int
  * @y: int
  * Return: 1 if n is a prime number, 0 if not
