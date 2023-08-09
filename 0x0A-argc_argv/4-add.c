@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 		for (c = argv[argc]; *c; c++)
 			if (*c < 48 || *c > '9')
 				return (printf("Error\n"), 1);
-		p += atio(argv[argc]);
+		p += atoi(argv[argc]);
 	}
 	printf("%d\n", p);
 	return (0);
