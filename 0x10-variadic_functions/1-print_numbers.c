@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <stdio.h>
 /**
  * print_numbers - printing input numbers
  * @n: int
@@ -8,8 +7,8 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int p;
 	va_list num;
+	unsigned int p;
 
 	va_start(num, n);
 
