@@ -5,7 +5,6 @@
  * @array: array
  * @size: how many elem to print
  * @action: pointer
- *
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
