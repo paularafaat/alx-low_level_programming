@@ -3,12 +3,12 @@
 #include "main.h"
 int _atoi(char *s)
 {
-	int x:
+	int x;
 		while(*s != \0)
 		{
 			x = atoi(*s);
 		}
-	return (s);
+	return (*s);
 
 
 }
