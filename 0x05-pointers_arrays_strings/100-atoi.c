@@ -8,7 +8,7 @@ int _atoi(char *s)
 		{
 			x = atoi(*s);
 		}
-	return (*s);
+	return (x);
 
 
 }
