@@ -6,7 +6,7 @@ int _atoi(char *s)
 	int x;
 		while(*s != '\0')
 		{
-			x = atoi(*s);
+			x = atoi(s);
 		}
 	return (x);
 
