@@ -1,5 +1,5 @@
 #include "main.h"
-int prime_check(int n,int i);
+int prime_check(int n, int i);
 /**
  *  is_prime_number - says if an integer is a prime number or not
  * @n: integer
