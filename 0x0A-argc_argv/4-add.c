@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - program to adds positive nums
+ * main - program to adds nums
  * @argc: int
  * @argv: list
  * Return: 0 on success and 1 on fail
@@ -8,32 +9,15 @@
 int main(int argc, char *argv[])
 {
 	int sum = 0;
-	int i;
+	char *c;
 
-	if (argc == 1)
+	while (--argc)
 	{
-		printf("0\n");
-		return (0);
+		for (c = argv[argc]; *c; c++)
+			if (*c < '0' || *c > '9')
+				return (printf("Error\n"), 1);
+		sum += atoi(argv[argc]);
 	}
-	for (i = 1; i < argc; i++)
-	{
-		int l = 0;
-
-		while (argv[i][j] != '\0')
-		{
-			if (argv[i][j] < '0' || argv[i][j] > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
-			j++;
-		}
-		int num = atoi(argv[i]);
-
-		sum += num;
-	}
-
-
 	printf("%d\n", sum);
 	return (0);
 }
