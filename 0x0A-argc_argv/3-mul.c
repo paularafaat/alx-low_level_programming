@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - program to multipilies tow nums
  * @argc: int
@@ -11,7 +12,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		x = argv[1] * argv[2];
+		x = atoi(argv[1]) * atoi(argv[2]);
 		pritnf("%d\n", x);
 	}
 	else
