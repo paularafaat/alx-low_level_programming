@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 #include <string.h>
 /**
  * char *str_concat - function that concatenates tow strings
