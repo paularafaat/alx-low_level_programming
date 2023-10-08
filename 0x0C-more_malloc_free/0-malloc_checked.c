@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * *malloc_checked - function that allocates memoru using malloc
  * @b: integer
