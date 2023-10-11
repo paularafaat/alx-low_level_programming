@@ -23,7 +23,7 @@ int _strlen(char *s)
  * @s: pointer
  * Return: pointer to string
  */
-char _strcpy(char *d, char *s)
+char *_strcpy(char *d, char *s)
 {
 	int len, i;
 
