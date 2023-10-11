@@ -26,13 +26,17 @@ char _strcpy(char *d, char *s)
 	int len, i;
 
 	len = 0;
-	while (s[len != '\0')
-	{	len++;
+	while (s[len] != '\0')
+	{
+		len++;
 	}
+
 	for (i = 0; i < len; i++)
 	{
+
 		d[i] = s[i];
 	}
+
 	s[i] = '\0';
 	return (d);
 }
