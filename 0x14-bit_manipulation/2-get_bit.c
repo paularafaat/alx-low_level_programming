@@ -3,6 +3,7 @@
  * get_bit - gets bit
  * @n: int
  * @index: int
+ * Return: int
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
