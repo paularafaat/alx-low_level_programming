@@ -11,17 +11,21 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 		return (0);
-	size_t lenght = strlen(b);
+	size_t length = strlen(b);
 
-	for  (size_t i = 0; i < lenght; i++)
+	for  (size_t i = 0; i < length; i++)
 	{
-		if (b[i] == '0')
+		if (b[i] == '1')
 		{
 			result = (result << 1) | 1;
 		}
-		else if (b[i] == '1')
+		else if (b[i] == '0')
 		{
 			result = result << 1;
+		}
+		else
+		{
+			return (0);
 		}
 	}
 	return (result);
