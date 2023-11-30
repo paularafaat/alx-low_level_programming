@@ -1,5 +1,23 @@
 #include "main.h"
 /**
+ * _strlen - to get the len of str
+ * @c: pointer
+ * Return: th lenth
+ */
+int _strlen(char *c)
+{
+	int len = 0;
+
+	if (!c)
+		return (0);
+	while (*c)
+	{
+		len++;
+		c++;
+	}
+	return (len);
+}
+/**
  * create_file - fun to creat file
  * @filename: file name
  * @text_content: the content to write
@@ -14,7 +32,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	if (text_content != NULL)
 	{
-		Ws = write(fd, text_content, strlen(text_content));
+		Ws = write(fd, text_content, _strlen(text_content));
 	if (Ws == -1)
 	{
 		close(fd);
@@ -23,5 +41,4 @@ int create_file(const char *filename, char *text_content)
 	}
 	close(fd);
 	return (1);
-
 }
